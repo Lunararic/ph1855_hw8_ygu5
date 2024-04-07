@@ -10,7 +10,24 @@ knitr::opts_chunk$set(echo = TRUE)
 library(NSM3)
 ```
 
-```{r}
 
+# Hollander et al. Nonparametric Statistical Methods 2014
+# P409 Q3
+```{r}
+# test independence
+# input data
+X = c(515,286,469,410,461,436,479,198,389,262,536)
+Y = c(32500,26800,11410,14850,23640,23820,29840,21830,24650,22500,26000)
+# conduct Kendall test
+cor.test(X, Y, method="kendall")
 ```
 
+# P442 Q52
+```{r}
+# test independence
+# input data
+year = c(1950,1951,1952,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964)
+number_odds = c(10,20,17,16,12,15,13,18,17,19,21,23,23,28,28)
+# conduct Spearman correlation test
+cor.test(year, number_odds, method="spearman", alternative = "greater")
+```
