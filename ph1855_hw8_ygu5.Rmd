@@ -1,0 +1,16 @@
+---
+title: "ph1855_hw8_ygu5"
+author: "Yue Gu"
+date: "2024-04-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(NSM3)
+```
+
+```{r}
+
+```
+
